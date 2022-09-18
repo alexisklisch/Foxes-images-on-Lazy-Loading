@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foxes images on Lazy Loading</title>
+    <link rel="shortcut icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/346/fox_1f98a.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header__title">¡Imágenes aleatorias de zorros 🦊!<br>Usando Lazy Loading</h1>
+            <section class="header__actions">
+                <div class="header__actions__buttons">
+                    <button id="add-img-btn" class="header__actions__btn">Agregar imágen</button>
+                    <button id="reboot-img-btn" class="header__actions__btn var-1">Reiniciar</button>
+                </div>
+                <div class="header__actions__info">
+                    <p>Imágenes agregadas: <span id="img-added">0</span></p>
+                    <p>Imágenes cargadas: <span id="img-loaded">0</span></p>
+                </div>
+            </section>
+        </header>
+        <main class="main">
+            <section class="main__img-container" id="img-container">
+
+            </section>
+        </main>
+    </div>
+    <footer class="footer">
+        <figure>
+            <img src="https://alexisklisch.com/media/graphs/logo-alexis-klisch.svg" alt="">
+        </figure>
+    </footer>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
